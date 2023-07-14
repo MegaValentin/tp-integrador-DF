@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--main-5-color);
+}
+/*Paleta de colores*/
+:root{
+    --main-1-color: #FC7300;
+    --main-2-color: #1F8A70;
+    --main-3-color: #00425A;
+    --main-4-color: #181823;
+    --main-5-color: #EFF5F5;
+    --main-6-color: #000000;
+    
+}
+/*Encabezado*/
+/*Main*/
+/*Seccion Porque elegirnos*/
+/*Seccion Plan de estudio*/
+.planDeEstudio{
+    
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+.cardsMaterias{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+.materias{
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 18rem;
+}
+/*Contactanos*/
+.irFormulario{
+    background-color: var(--main-1-color);
+    width: 100%;
+    
+}
+
+/*Noticias*/
+
+/*Formulario*/
+.contacto{
+    background-color: var(--main-5-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+}
+
+.formulario h4,
+.formulario h2{
+    color: var(--main-6-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Bungee', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+  
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 8px;
+    border: 1px solid var(--main-4-color);
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  textarea:focus {
+    border-color: var(--main-4-color);
+}
+  
+button[type="submit"] {
+    background-color: var(--main-2-color);
+    color: var(--main-5-color);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+button[type="submit"]:hover {
+    background-color: #3E8E41;
+}
+/*pie de pagina*/
