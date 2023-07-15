@@ -1,9 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: 0;
 }
 body{
     background-color: var(--main-5-color);
+    box-sizing: border-box;
 }
 /*Paleta de colores*/
 :root{
@@ -18,8 +20,9 @@ body{
 /*Encabezado*/
 /*Main*/
 /*Seccion Porque elegirnos*/
+
 /*Seccion Plan de estudio*/
-.planDeEstudio{
+/*.planDeEstudio{
     
     text-align: center;
     width: 100%;
@@ -38,7 +41,40 @@ body{
     margin-left: 50px;
     margin-right: 50px;
     width: 18rem;
+}*/
+@media screen and (max-width: 320px) {
+    .planDeEstudio{
+        background-color: var(--main-3-color);
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .planDeEstudio h2{
+        text-align: center;
+        display: inline;
+        margin-left: 17%;
+        
+        justify-content: center;
+        width: 50%;
+        font-size: 20px;
+        border: 1px solid red;
+    }
+    .cardsMaterias {
+        margin-top: 5%;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, .5fr);
+        gap: 10px;
+        margin-left: 28%;
+        font-size: 10px;
+    }
+    .materias {
+    width: 100%;
+    /* Estilos adicionales para las tarjetas en pantallas de 320px */
+    }
 }
+
 /*Contactanos*/
 .irFormulario{
     background-color: var(--main-1-color);
