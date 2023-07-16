@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .carrusel {
+          width: 300px;
+          height: 200px;
+          overflow: hidden;
+          position: relative;
+        }
+        
+        .carrusel-imagenes {
+          width: 300%;
+          height: 100%;
+          display: flex;
+          animation: carruselAnimacion 40s infinite;
+        }
+        
+        .carrusel-imagen {
+          width: 33.33%;
+          height: 100%;
+        }
+        
+        .carrusel-imagen img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+    
+        @keyframes carruselAnimacion {
+          0% {
+            transform: translateX(0);
+          }
+          33.33% {
+            transform: translateX(-100%);
+          }
+          66.66% {
+            transform: translateX(-200%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="carrusel">
+        <div class="carrusel-imagenes">
+          <div class="carrusel-imagen">
+            <img src="./img/ciencias.jpg" alt="Imagen 1">
+          </div>
+          <div class="carrusel-imagen">
+            <img src="./img/ed-fisica.jpg" alt="Imagen 2">
+          </div>
+          <div class="carrusel-imagen">
+            <img src="./img/matematicas.jpg" alt="Imagen 3">
+          </div>
+          <div class="carrusel-imagen">
+            <img src="./img/escuela-qs.png" alt="Imagen 3">
+          </div>
+          <div class="carrusel-imagen">
+            <img src="./img/geografia.jpeg" alt="Imagen 3">
+          </div>
+          <div class="carrusel-imagen">
+            <img src="./img/historia.jpeg" alt="Imagen 3">
+          </div>
+          <div class="carrusel-imagen">
+            <img src="./img/encabezado/literatura.jpg" alt="Imagen 3">
+          </div>
+        </div>
+      </div>
+</body>
+</html>

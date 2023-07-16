@@ -18,7 +18,77 @@ body{
     
 }
 /*Encabezado*/
+@media screen and (max-width: 320px) {
+    .encabezado {
+        background:var(--main-5-color)
+
+    }
+    .barraNavegacion{
+        background-color: var(--main-3-color);
+        
+        text-align: center;
+    }
+    .barraNavegacion .menu li a{
+        text-decoration: none;
+        
+    }
+    .carrusel {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+    }
+    .carrusel-imagenes {
+        width: 300%;
+        height: 100%;
+        display: flex;
+        animation: carruselAnimacion 40s infinite;
+    } 
+    .carrusel-imagen {
+        width: 33.33%;
+        height: 100%;
+    }  
+    .carrusel-imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    @keyframes carruselAnimacion {
+        0% {
+          transform: translateX(0);
+        }
+        33.33% {
+          transform: translateX(-100%);
+        }
+        66.66% {
+          transform: translateX(-200%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+    }
+}
 /*Main*/
+@media screen and (max-width: 320px) {
+    .quienesSomos{
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    .quienesSomos .box1 h1{
+        font-size: 50px;
+        width: 100%;
+        margin-bottom: 30px;
+        
+    }
+    .quienesSomos .box1 img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .quienesSomos .box2 p{
+        margin: 20px;
+    }
+}
 /*Seccion Porque elegirnos*/
 
 /*Seccion Plan de estudio*/
@@ -53,34 +123,56 @@ body{
     .planDeEstudio h2{
         text-align: center;
         display: inline;
-        margin-left: 17%;
-        
+        margin-left: 13%;
         justify-content: center;
         width: 50%;
-        font-size: 20px;
-        border: 1px solid red;
+        font-size: 25px;
+        color: white;
     }
     .cardsMaterias {
+        
         margin-top: 5%;
         align-items: center;
         display: grid;
         grid-template-columns: repeat(1, .5fr);
         gap: 10px;
         margin-left: 28%;
-        font-size: 10px;
+        font-size: 12px;
     }
     .materias {
-    width: 100%;
+        color: white;
+        background-color: var(--main-2-color);
+        width: 22vh;
     /* Estilos adicionales para las tarjetas en pantallas de 320px */
     }
 }
 
 /*Contactanos*/
-.irFormulario{
-    background-color: var(--main-1-color);
-    width: 100%;
-    
+@media screen and (max-width: 320px) {
+    .irFormulario{
+        background-color: var(--main-1-color);
+        width: 100%;
+        
+    }
+    .irFormulario h3{
+        text-align: center;
+        color: var(--main-6-color);
+        margin-bottom: 20px;
+    }
+    .irFormulario .boton{
+        font-size: 20px;
+        text-decoration: none;
+        
+        margin-left: 29%;
+        color: white;
+        background-color: var(--main-3-color);
+    }
+    .boton:hover{
+        background-color: red;
+        cursor: pointer;
+    }
 }
+
 
 /*Noticias*/
 
