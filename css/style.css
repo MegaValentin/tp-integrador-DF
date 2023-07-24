@@ -18,15 +18,98 @@ body{
     
 }
 /*Encabezado*/
-@media screen and (max-width: 320px) {
-    .encabezado {
-        width: 100%;
-        height: auto;
-        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
-        url("../img/encabezado/informatica.jpg");
-        background-size: cover;
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.encabezado {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+    url("../img/encabezado/informatica.jpg");
+    background-size: cover;
 
+}
+.barraNavegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-3-color);
+    padding: 10px;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.menu li {
+    margin: 0 10px;
+}
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+.menu li a:hover {
+    color: var(--main-1-color);
+}
+.h-txt span{
+    letter-spacing: 5px;
+    font-size: 34px;
+}
+.h-txt .btn{
+    background-color: var(--main-3-color);
+}
+.h-txt .btn a{
+    text-decoration: none;
+    color: white;
+        
+}
+    @media screen and (max-width: 768px){
+        .navbar {
+            flex-direction: column;
+        } 
+        .logo {
+            width: 19%;
+            text-align: center;
+        }
+        .logo span{
+            color: white;
+        }
+        .menu {
+            margin-top: 15px;
+            align-items: center;
+        }
+        .menu li {
+            margin: 5px 0;
+        }
+        .h-txt {
+            margin-top: 15vh;
+            
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+            font-size: 34px;
+            
+        }
+        .h-txt h1 {
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        
+        .btn {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 15vh;
+        }
     }
+@media screen and (max-width: 320px) {
+    
     .barraNavegacion{
         background-color: var(--main-3-color);
         text-align: center;
@@ -73,17 +156,13 @@ body{
         margin-top: 50px;
     }
     .h-txt .btn{
-        background-color: var(--main-3-color);
+        
         text-align: center;
         margin-top: 50px;
         margin-bottom: 90px;
         width: 100%;
     }
-    .h-txt .btn a{
-        text-decoration: none;
-        color: white;
-        
-    }
+    
 }
 /*Main*/
 @media screen and (max-width: 320px) {
