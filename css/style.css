@@ -67,6 +67,7 @@ body{
     color: white;
         
 }
+/*Tablet 768px*/
     @media screen and (max-width: 768px){
         .navbar {
             flex-direction: column;
@@ -105,66 +106,71 @@ body{
         .btn {
             text-align: center;
             margin-top: 30px;
-            margin-bottom: 15vh;
+            margin-bottom: 29vh;
         }
     }
-@media screen and (max-width: 320px) {
-    
-    .barraNavegacion{
-        background-color: var(--main-3-color);
-        text-align: center;
-        width: 100%;
-    }
-    .barraNavegacion .menu{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
+    /*Mobilie 320px*/    
+    @media screen and (max-width: 320px) {
         
+        .barraNavegacion{
+            background-color: var(--main-3-color);
+            text-align: center;
+            width: 100%;
+        }
+        .barraNavegacion .menu{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .barraNavegacion .menu li {
+            float: left;
+        }
+        .barraNavegacion .menu li a{
+            display: block;
+            color: var(--main-5-color);
+            text-align: center;
+            padding: 10px 30px;
+            text-decoration: none;
+        }
+        .barraNavegacion .logo{
+            align-items:center;
+            width: 50%;
+        }
+        .barraNavegacion .logo span{
+            color: #EFF5F5;
+            text-align: center;
+        }
+        .h-txt{
+            color: white;
+            display: contents;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+        .h-txt span{
+            display: block;
+            letter-spacing: 5px;
+            font-size:30px;
+            margin-top: 50px;
+        }
+        .h-txt .btn{
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 90px;
+            width: 100%;
+        }
     }
-    .barraNavegacion .menu li {
-        float: left;
-    }
-    .barraNavegacion .menu li a{
-        display: block;
-        color: var(--main-5-color);
-        text-align: center;
-        padding: 10px 30px;
-        text-decoration: none;
-    }
-    .barraNavegacion .logo{
-        
-        align-items:center;
-        width: 50%;
-    }
-    .barraNavegacion .logo span{
-        color: #EFF5F5;
-        text-align: center;
-    }
-    
-    .h-txt{
-        color: white;
-        display: contents;
-        transform: translate(-50%,-50%);
-        text-align: center;
-        
-    }
-    .h-txt span{
-        display: block;
-        letter-spacing: 5px;
-        font-size:30px;
-        margin-top: 50px;
-    }
-    .h-txt .btn{
-        
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 90px;
-        width: 100%;
-    }
-    
-}
 /*Main*/
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 80px 0;
+}
+.contenedor{
+    padding: 80px 0;
+}
 @media screen and (max-width: 320px) {
     .quienesSomos{
         width: 100%;
@@ -173,9 +179,7 @@ body{
     }
     .quienesSomos .box1 h1{
         font-size: 50px;
-        width: 100%;
         margin-bottom: 30px;
-        
     }
     .quienesSomos .box1 img{
         width: 100%;
@@ -183,6 +187,34 @@ body{
     }
     .quienesSomos .box2 p{
         margin: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    .quienesSomos{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .quienesSomos .box1{
+        width: 40%;
+    }
+    .quienesSomos .box1 h1{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .quienesSomos .box1 img{
+        
+        width: 90%;
+    }
+    .quienesSomos .box2{
+        width: 50%;
+    }
+    .quienesSomos .box2 p{
+        width: auto;
+        font-size: 15px;
+        margin: 25px;
     }
 }
 /*Seccion Porque elegirnos*/
@@ -193,14 +225,42 @@ body{
         align-items: center;
     }
     .porqueElegirnos .txt-elg h2{
-        font-size: 50px;
-        width: 100%;
+        font-size: 35px;
         margin-bottom: 30px;
     }
     .porqueElegirnos .txt-elg p{
         margin: 20px;
     }
+
     .porqueElegirnos .imagen img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .porqueElegirnos{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        margin-bottom: 75px;
+    }
+    .porqueElegirnos .txt-elg{
+        width: 60%;
+    }
+    .porqueElegirnos .txt-elg h2{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+    .porqueElegirnos .txt-elg p{
+        margin: 20px;
+    }
+    .porqueElegirnos .imagen{
+        width: 40%;
+    }
+    .porqueElegirnos .imagen img{
+        margin: 10px;
+        margin-top: 20%;
         width: 100%;
     }
 }
@@ -225,23 +285,41 @@ body{
     margin-right: 50px;
     width: 18rem;
 }*/
-@media screen and (max-width: 320px) {
-    .planDeEstudio{
-        background-color: var(--main-3-color);
-        width: 100%;
-        height: auto;
-        margin-top: 10%;
-        
+.planDeEstudio{
+    background-color: var(--main-3-color);
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    text-align: center;
+    
+}
+.planDeEstudio h2{
+    text-align: center;
+    display: inline;
+    color: white;
+}
+.cardsMaterias{
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow: hidden;
+
     }
-    .planDeEstudio h2{
-        text-align: center;
-        display: inline;
-        margin-left: 15%;
-        justify-content: center;
-        width: 50%;
-        font-size: 25px;
+    .cardsMaterias  > .materias{
+        width: 30%;
+        background-color: var(--main-2-color);
         color: white;
+        object-fit: cover;
+        margin-bottom: 20px;
+        display: block;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+        cursor: pointer;
+        overflow: hidden;
     }
+@media screen and (max-width: 320px) {
+    
+    
     .cardsMaterias {
         
         margin-top: 5%;
@@ -258,6 +336,27 @@ body{
         border: 2px solid var(--main-6-color);
         background-color: var(--main-2-color);
         width: 23vh;
+    }
+}
+@media screen and (max-width: 768px){
+    .cardsMaterias{
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow: hidden;
+
+    }
+    .cardsMaterias  > .materias{
+        width: 30%;
+        background-color: var(--main-2-color);
+        color: white;
+        object-fit: cover;
+        margin-bottom: 20px;
+        display: block;
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+        cursor: pointer;
+        overflow: hidden;
     }
 }
 
@@ -315,6 +414,11 @@ article{
     margin-bottom: 0;
 }
 @media screen and (max-width:320px) {
+    .articulo{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:768px){
     .articulo{
         padding: 10px;
     }
