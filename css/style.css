@@ -19,17 +19,14 @@ body{
     
 }
 /*Encabezado*/
-.container-fluid {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 .encabezado {
     width: 100%;
     height: auto;
     background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
     url("../img/encabezado/informatica.jpg");
     background-size: cover;
-
+    margin: 0 auto;
 }
 .barraNavegacion {
     display: flex;
@@ -172,6 +169,32 @@ body{
 .contenedor{
     padding: 80px 0;
 }
+.quienesSomos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.quienesSomos .box1{
+    width: 50%;
+}
+.quienesSomos .box1 h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.quienesSomos .box1 img{
+    width: 100%;
+}
+.quienesSomos .box2{
+    width: 50%;
+}
+.quienesSomos .box2 p{
+    width: auto;
+    font-size: 20px;
+    margin: 25px;
+}
+/*Mobile 320px*/
 @media screen and (max-width: 320px) {
     .quienesSomos{
         width: 100%;
@@ -190,28 +213,12 @@ body{
         margin: 20px;
     }
 }
+/*Tablet 768px*/
 @media screen and (max-width: 768px){
-    .quienesSomos{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-    }
-    .quienesSomos .box1{
-        width: 40%;
-    }
-    .quienesSomos .box1 h1{
-        font-size: 35px;
-        margin-bottom: 30px;
-    }
     .quienesSomos .box1 img{
-        
         width: 90%;
     }
-    .quienesSomos .box2{
-        width: 50%;
-    }
+    
     .quienesSomos .box2 p{
         width: auto;
         font-size: 15px;
@@ -219,6 +226,33 @@ body{
     }
 }
 /*Seccion Porque elegirnos*/
+
+/*Mobile 320px*/
+.porqueElegirnos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.porqueElegirnos .txt-elg{
+    width: 40%;
+}
+.porqueElegirnos .txt-elg h2{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.porqueElegirnos .txt-elg p{
+    margin: 30px;
+}
+.porqueElegirnos .imagen{
+    width: 60%;
+}
+.porqueElegirnos .imagen img{
+    margin: 10px;
+    width: 100%;
+}
+/*Mobile 320*/
 @media screen and (max-width: 320px){
     .porqueElegirnos{
         width: 100%;
@@ -237,28 +271,15 @@ body{
         width: 100%;
     }
 }
+/*Tablet 768*/
 @media screen and (max-width: 768px){
     .porqueElegirnos{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
         margin-bottom: 75px;
-    }
-    .porqueElegirnos .txt-elg{
-        width: 60%;
-    }
-    .porqueElegirnos .txt-elg h2{
-        font-size: 35px;
-        margin-bottom: 30px;
-    }
+    } 
     .porqueElegirnos .txt-elg p{
         margin: 20px;
     }
-    .porqueElegirnos .imagen{
-        width: 40%;
-    }
+    
     .porqueElegirnos .imagen img{
         margin: 10px;
         margin-top: 20%;
@@ -286,11 +307,19 @@ body{
     margin-right: 50px;
     width: 18rem;
 }*/
+.contenedorMaterias{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.contenedorMaterias{
+    padding: 50px 0;
+}
 .planDeEstudio{
     background-color: var(--main-3-color);
     width: 100%;
     height: auto;
-    margin-top: 10%;
     text-align: center;
     
 }
@@ -298,8 +327,48 @@ body{
     text-align: center;
     display: inline;
     color: white;
+    margin: auto;
 }
 .cardsMaterias{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+
+}
+.cardsMaterias  > .materias{
+    width: 30%;
+    background-color: var(--main-2-color);
+    color: white;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    overflow: hidden;
+}
+@media screen and (max-width: 320px) {
+    .cardsMaterias {
+        
+        margin-top: 5%;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, .5fr);
+        gap: 10px;
+        margin-left: 28%;
+        font-size: 12px;
+        
+    }
+    .materias {
+        color: white;
+        border: 2px solid var(--main-6-color);
+        background-color: var(--main-2-color);
+        width: 23vh;
+    }
+}
+@media screen and (max-width: 768px){
+    .cardsMaterias{
         margin-top: 5%;
         display: flex;
         flex-wrap: wrap;
@@ -318,79 +387,10 @@ body{
         cursor: pointer;
         overflow: hidden;
     }
-    @media screen and (max-width: 320px) {
-        .cardsMaterias {
-            
-            margin-top: 5%;
-            align-items: center;
-            display: grid;
-            grid-template-columns: repeat(1, .5fr);
-            gap: 10px;
-            margin-left: 28%;
-            font-size: 12px;
-            
-        }
-        .materias {
-            color: white;
-            border: 2px solid var(--main-6-color);
-            background-color: var(--main-2-color);
-            width: 23vh;
-        }
-    }
-    @media screen and (max-width: 768px){
-        .cardsMaterias{
-            margin-top: 5%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            overflow: hidden;
-
-        }
-        .cardsMaterias  > .materias{
-            width: 30%;
-            background-color: var(--main-2-color);
-            color: white;
-            object-fit: cover;
-            margin-bottom: 20px;
-            display: block;
-            box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .5);
-            cursor: pointer;
-            overflow: hidden;
-        }
-    }
-
-/*Contactanos*/
-.irFormulario .boton{
-    text-align: center;
-    
-}
-.irFormulario{
-    background-color: var(--main-1-color);
-    width: 100%;
-    height: 20vh;
-    
-}
-.irFormulario h3{
-    text-align: center;
-    color: var(--main-6-color);
-    margin-bottom: 20px;
-}
-.irFormulario .boton{
-    background-color: var(--main-2-color);
-    width: 50%;
-    height: 30px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    border-radius: 20px;
-}
-.irFormulario .boton a{
-    text-decoration: none;
-    color: var(--main-5-color);
 }
 /*Noticias*/
 .noticias{
     margin: 0 auto;
-    max-width: 800px;
 }
 article{
     padding: 20px;
@@ -405,19 +405,44 @@ article{
     height: auto;
 }
 .articulo p {
-    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 15px;
 }
-.noticias768{
-    max-width: 768px;
-    margin: 0 auto;
-  }
+
+.articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.articulo {
+    margin-bottom: 20px;
+    margin: 10px;
+    width: 40%;
+}
+
 @media screen and (max-width:320px) {
-    .articulo{
-        width: 50%;
+    .noticias{
+        max-width: 320px;
+        margin: 0 auto;
     }
-    
+    .articulos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow: hidden;
+    }
+    .articulo {
+        margin-bottom: 10px;
+        margin: 10px;
+        width: 2000px;
+    }
 }
 @media screen and (max-width: 768px) {
+    .noticias768{
+        max-width: 768px;
+        margin: 0 auto;
+    }
     .noticias {
       padding: 10px;
     }
@@ -432,7 +457,6 @@ article{
       margin: 20px;
       width: 40%;
     }
-  
     .articulo img {
       width: 100%;
       height: auto;

@@ -57,65 +57,56 @@
         
         <div class="txt-elg">
             <h2>¿Por que Elegirnos?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, debitis nobis quibusdam iusto necessitatibus at molestiae ratione iure fugiat fugit cumque accusantium nam assumenda totam. Voluptas officiis et sed exercitationem.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit adipisci nam reprehenderit itaque esse, dolore ullam. Quaerat quae fugiat, ipsam neque asperiores, deleniti in veritatis repudiandae est temporibus labore. Quos.</p>
+            <p>Elegir nuestra escuela significa brindar a tu hijo/a una educación sólida, una experiencia enriquecedora y un ambiente de aprendizaje donde se sientan apoyados y motivados para alcanzar su máximo potencial.</p>
+            <p>Te invitamos a visitar nuestras instalaciones y conocer más sobre lo que nuestra escuela tiene para ofrecer. ¡Esperamos darle la bienvenida a nuestra comunidad educativa!</p>
         </div>
         <div class="imagen">
             <img src="./img/encabezado/recreo.jpg" alt="">
         </div>
 
     </section>
-    <section class="planDeEstudio " id="propuesta-educativa">
+    <section class="planDeEstudio" id="propuesta-educativa">
         <h2>Propuesta Educativa</h2>
-        <div class="cardsMaterias">
+        <div class="cardsMaterias contenedorMaterias">
             <div class="card materias">
                 <img src="./img/matematicas.jpg" class="card-img-top" alt="matematicas">
                 <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">La materia de matemáticas en nuestra escuela es una emocionante aventura de descubrimiento y aprendizaje. A través de esta disciplina, los estudiantes exploran el fascinante mundo de los números y las formas, desarrollando habilidades fundamentales para su crecimiento académico y personal.</p>
                 </div>
             </div>
             <div class="card materias">
                 <img src="./img/historia.jpeg" class="card-img-top" alt="historia">
                 <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Nuestro programa de historia está diseñado para despertar la curiosidad y el interés de los estudiantes por el pasado. Los docentes utilizan recursos didácticos variados, desde documentos históricos hasta medios audiovisuales, para hacer que las clases sean interactivas y enriquecedoras.</p>
                 </div>
             </div>
             <div class="card materias">
                 <img src="./img/literatura.jpg" class="card-img-top" alt="historia">
                 <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">A través del análisis literario, los estudiantes aprenden a interpretar textos y a profundizar en el significado más allá de la superficie. Desarrollan habilidades críticas para analizar personajes, tramas, simbolismos y estilos literarios, lo que les permite apreciar el arte detrás de cada obra.</p>
                 </div>
             </div>
             <div class="card materias">
                 <img src="./img/geografia.jpeg" class="card-img-top" alt="geografia">
                 <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">La geografía es una puerta para comprender la diversidad cultural y la interconexión de las sociedades en un mundo globalizado. Los estudiantes exploran las diferencias culturales, los patrones migratorios y los intercambios comerciales, lo que fomenta una mentalidad abierta y respetuosa hacia otras culturas.</p>
                 </div>
             </div>
             <div class="card materias">
                 <img src="./img/ciencias.jpg" class="card-img-top" alt="ciencias">
                 <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Nuestro programa de ciencia abarca diversas ramas, como biología, química y física. Cada una de ellas proporciona una visión única sobre los elementos fundamentales de la naturaleza y su funcionamiento. Los estudiantes tienen la oportunidad de explorar la vida en todas sus formas, descubrir las propiedades de la materia y entender las leyes que rigen el mundo físico.</p>
                 </div>
             </div>
             <div class="card materias">
                 <img src="./img/ed-fisica.jpg" class="card-img-top" alt="ed-fisica">
                 <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Nuestro programa de educación física se basa en el enfoque lúdico y participativo, donde los estudiantes aprenden mientras se divierten y se mantienen activos. A través de una variedad de actividades y juegos, los estudiantes desarrollan su coordinación, fuerza, flexibilidad y resistencia física.</p>
                 </div>
             </div>
         </div>
-            
-    
     </section>
-    <section class="irFormulario container-fluid ">
-        <h3>¿Tenes alguna consulta sobre nuestra escuela?</h3>
-        
-        <div class="boton">
-            <a href="./formulario.html">Contactanos</a>
-        </div>
-    </section>
-    <section id="noticias" class="container container-fluid noticias noticias768">
+    <section id="noticias" class="container-fluid noticias noticias768">
         <h1 class="text-center tituloPrincipal">Noticias Recientes</h1>
         <div class="articulos">
             <article class="mb-4 articulo">
@@ -134,6 +125,27 @@
 
         </div>
     </section>
+    <section id="contacto" class="container-fluid contacto">
+        <div class="contenedor formulario">
+            <h2>¿Tenes alguna consulta sobre nuestra escuela?</h2>
+            <h4>Contactanos</h4>
+            <form action="https://formsubmit.co/valentinmega3@gmail.com" method="POST" >
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                
+                <label for="mensaje">Consulta:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+  
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
     <footer class="container-fluid piePagina">
         <div class="redes-sociales">
             <h3>Redes Sociales</h3>
@@ -142,7 +154,7 @@
             <a href="https://www.instagram.com/valentin_mega/" target="_blank"><img src="./img/redesSociales/linkedin.png" alt=""></a>
         </div>
         <div class="mapa">
-            <iframe src="https://www.google.com/maps/place/Parque+Municipal+Las+Acollaradas/@-36.2246612,-61.1294778,15z/data=!4m6!3m5!1s0x95bfe34151f9e503:0xddbae5f0d1cb58bd!8m2!3d-36.2246613!4d-61.1225048!16s%2Fg%2F11b7l4n_7r?hl=es&entry=ttu" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/place/Parque+Municipal+Las+Acollaradas/@-36.2246612,-61.1294778,15z/data=!4m6!3m5!1s0x95bfe34151f9e503:0xddbae5f0d1cb58bd!8m2!3d-36.2246613!4d-61.1225048!16s%2Fg%2F11b7l4n_7r?hl=es&entry=ttu" ></iframe>
         </div>
         <div class="contactos">
             <h3>Contactos</h3>
