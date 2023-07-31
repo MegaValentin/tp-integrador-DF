@@ -203,14 +203,17 @@ body{
         align-items: center;
         margin: 0 auto;
     }
-    .box1, .box2 {
-        text-align: center;
-        
+    .quienesSomos .box1{
         width: 100%;
+        text-align: center;
+        align-items: center;
     }
     .quienesSomos .box1 h1{
         font-size: 37px;
         display: inline;
+    }
+    .quienesSomos .box2{
+        width: 100%;
     }
 }
 /*Tablet 768px*/
@@ -227,7 +230,7 @@ body{
 }
 /*Seccion Porque elegirnos*/
 
-/*Mobile 320px*/
+
 .porqueElegirnos{
     width: 100%;
     height: auto;
@@ -255,6 +258,12 @@ body{
 /*Mobile 320*/
 @media screen and (max-width: 320px){
     .porqueElegirnos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .porqueElegirnos .txt-elg{
         width: 100%;
         text-align: center;
         align-items: center;
@@ -266,7 +275,9 @@ body{
     .porqueElegirnos .txt-elg p{
         margin: 20px;
     }
-
+    .porqueElegirnos .imagen{
+        width: 100%;
+    }
     .porqueElegirnos .imagen img{
         width: 100%;
     }
