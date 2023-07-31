@@ -107,7 +107,7 @@ body{
             margin-bottom: 29vh;
         }
     }
-    /*Mobilie 320px*/    
+    /*320px*/    
     @media screen and (max-width: 320px) {
         
         .barraNavegacion{
@@ -196,21 +196,21 @@ body{
 }
 /*Mobile 320px*/
 @media screen and (max-width: 320px) {
-    .quienesSomos{
-        width: 100%;
-        text-align: center;
+    
+    .quienesSomos {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        margin: 0 auto;
+    }
+    .box1, .box2 {
+        text-align: center;
+        
+        width: 100%;
     }
     .quienesSomos .box1 h1{
-        font-size: 50px;
-        margin-bottom: 30px;
-    }
-    .quienesSomos .box1 img{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    .quienesSomos .box2 p{
-        margin: 20px;
+        font-size: 37px;
+        display: inline;
     }
 }
 /*Tablet 768px*/
